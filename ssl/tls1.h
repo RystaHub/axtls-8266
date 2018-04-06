@@ -75,8 +75,13 @@ extern "C" {
 #define CLR_SSL_FLAG(A)             (ssl->flag &= ~A)
 #define IS_SET_SSL_FLAG(A)          (ssl->flag & A)
 
-#define MAX_KEY_BYTE_SIZE           512     /* for a 4096 bit key */
-#define RT_MAX_PLAIN_LENGTH         16384
+//#define MAX_KEY_BYTE_SIZE           512     /* for a 4096 bit key */
+//#define RT_MAX_PLAIN_LENGTH         16384
+// #define RT_EXTRA                    1024
+// #define BM_RECORD_OFFSET            5
+
+#define MAX_KEY_BYTE_SIZE           256     /* for a 2048 bit key */
+#define RT_MAX_PLAIN_LENGTH         1024
 #define RT_EXTRA                    1024
 #define BM_RECORD_OFFSET            5
 
